@@ -1,0 +1,20 @@
+.unorderedList{
+    color: darkcyan;
+    padding: 20px;
+    border: 3px dashed rgb(20, 9, 11);
+}
+.quot{
+    color: rgb(223, 20, 20);
+    padding-left: 10px;
+
+    border: 3px dashed ;
+    
+    border-bottom-color: rgb(32, 16, 26);
+}
+.description{
+    border-style: groove;
+    padding: 15px;
+}
+.table tr th{
+    background-color: cornsilk;
+}
