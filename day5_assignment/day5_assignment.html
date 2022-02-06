@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASK_MAN</title>
+    
+</head>
+<body>
+    <style>
+        /* to remove(reset) default margin and padding  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url('./images (4).jpeg')  ;
+            /* background-size: contain; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* width: 200px; */
+            /* vh=view height it takes complete 100 percent height  */
+            height: 100vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+        }  
+        
+        ul{
+            list-style-type: none;
+            margin: o;
+            padding: 0;
+            overflow: hidden;
+
+        } 
+        ul li{
+            float: left;
+            line-height: 40px;
+            /* background-color: rgb(212, 22, 22);
+            opacity: .2; */
+            font-size: 25px;
+            margin-right: 3px;
+            
+        }
+        ul li ul li{
+            font-size: 15px;
+        }
+        /* a:link,a:visited{
+            display: block;
+            width: 220px;
+            text-align: center;
+            padding: 4px;
+            text-decoration: uppercase ;
+            text-decoration: none;
+        } */
+        ul li a{
+            display: inline-block;
+            width: 220px;
+            text-align: center;
+            padding: 4px;
+            text-decoration: uppercase ;
+            text-decoration: none;
+        }
+        /* a:hover,a:active{
+            background-color: #b0b69f;
+        } */
+        ul li a:hover{
+            background-color: #b0b69f;
+        }
+        ul li ul li{
+          
+            display: none;
+        }
+        ul li:hover ul li{
+            display: block;
+        }
+        .logo{
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 10px;
+
+        }
+    </style>
+    <div class="logo" ><a href="#logo"></a><img src="logo.jpeg"  alt="">
+        <nav>
+            <ul class="ul">
+                <li><a href="day5_assignment.html" style="color: aliceblue;" >Home</a></li>
+                <li><a href="day5_aboutus.html" style="color: aliceblue;" >About us</a>
+                    <ul>
+                        <li><a href="day5_aboutus.html" style="color: aliceblue;">Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="day5_contactus.html" style="color: aliceblue;" >Contact us</a>
+                    <ul>
+                        <li><a href="day5_contactus.html" style="color: aliceblue;">Form</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#product" style="color: aliceblue;">Product</a></li>
+                <li><a href="#download" style="color: aliceblue;">Download</a></li>
+            </ul>
+        </nav>
+        <p  style="font-size: xx-large; color: rgb(57, 117, 170); position: relative;left: 450px;top: 190px;">
+                welcome to MASK_MAN gamming page
+        </p>
+        <pre style="font-size: xx-large; color: aliceblue; position: relative;left: 10px;top: 220px;">
+            A gaming computer, also known as a gaming PC, is a specialized personal computer 
+            designed for playing video games at very high standards. Gaming PCs typically differ 
+            from mainstream personal computers by using high-performance video cards and high 
+            core-count central processing units with raw performance. Gaming PCs are also used for
+            other demanding tasks such as video editing.[1] Many gamers and computer enthusiasts 
+            choose to overclock their CPU(s) and GPU(s) in order to gain extra performance. 
+            The added power draw needed to overclock either processing unit often requires additional 
+            cooling, using upgraded air cooling or water cooling.
+        </pre>
+    </div>
+</body>
+</html>

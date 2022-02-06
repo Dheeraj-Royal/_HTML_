@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASK_MAN</title>
+</head>
+<body>
+    <style>
+        /* to remove(reset) default margin and padding  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url('./images (5).jpeg')  ;
+            /* background-size: contain; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* width: 200px; */
+            /* vh=view height it takes complete 100 percent height  */
+            height: 100vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+        }  
+        
+        ul{
+            list-style-type: none;
+            margin: o;
+            padding: 0;
+            overflow: hidden;
+
+        } 
+        ul li{
+            float: left;
+            line-height: 40px;
+            /* background-color: rgb(212, 22, 22);
+            opacity: .2; */
+            font-size: 25px;
+            margin-right: 3px;
+            
+        }
+        ul li ul li{
+            font-size: 15px;
+        }
+        /* a:link,a:visited{
+            display: block;
+            width: 220px;
+            text-align: center;
+            padding: 4px;
+            text-decoration: uppercase ;
+            text-decoration: none;
+        } */
+        ul li a{
+            display: inline-block;
+            width: 220px;
+            text-align: center;
+            padding: 4px;
+            text-decoration: uppercase ;
+            text-decoration: none;
+        }
+        /* a:hover,a:active{
+            background-color: #b0b69f;
+        } */
+        ul li a:hover{
+            background-color: #b0b69f;
+        }
+        ul li ul li{
+          
+            display: none;
+        }
+        ul li:hover ul li{
+            display: block;
+        }
+        .logo{
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 10px;
+
+        }
+        .b{
+
+            border: 1px rgb(247, 235, 235);
+            padding: 6px;
+            margin-top: 1%;
+            width: 70%;
+            margin-left: 2%;
+        }
+        .submit:hover,.back:hover
+        {
+            background-color: black;
+            color:antiquewhite;
+        }
+        .refill:hover,.back:hover
+        {
+            background-color: black;
+            color:antiquewhite;
+        }
+        .location{
+            position: relative;left: 600px;top: -400px;
+        }
+    </style>
+    <div class="logo" ><a href="#logo"></a><img src="logo.jpeg"  alt="">
+        <nav>
+            <ul class="ul">
+                <li><a href="day5_assignment.html" style="color: aliceblue;" >Home</a></li>
+                <li><a href="day5_aboutus.html" style="color: aliceblue;" >About us</a>
+                    <ul>
+                        <li><a href="day5_aboutus.html" style="color: aliceblue;">Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="day5_contactus.html" style="color: aliceblue;" >Contact us</a>
+                    <ul>
+                        <li><a href="day5_contactus.html" style="color: aliceblue;">Form</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#product" style="color: aliceblue;">Product</a></li>
+                <li><a href="#download" style="color: aliceblue;">Download</a></li>
+            </ul>
+        </nav>
+            <form action="day5_contactus.html">
+                <div class="b">
+                    <label for="first name" style="color: aliceblue;">first_name</label>
+                    <input type = "text" id="first name" placeholder="Enter first name" name = "firstname" maxlength="10"/><br/><br/>
+                    <!-- <input type = "text" id="first name" placeholder = "firstname" maxlength="10"/><br/><br/> -->    
+                </div>
+                <div class="b">
+                    <label for="first name" style="color: aliceblue;">first_name</label>
+                    <input type = "text" id="first name" placeholder="Enter first name" name = "firstname" maxlength="10"/><br/><br/>
+                    <!-- <input type = "text" id="first name" placeholder = "firstname" maxlength="10"/><br/><br/> -->     
+                </div>
+                <div class="b">
+                    <label for="last name" style="color: aliceblue;">last_name</label>
+                    <input type = "text" id="last name" placeholder="Enter last name" name = "lastname"/><br/><br/>
+                </div>    
+                <div class="b">
+                    <label for="EmailAddress" style="color: aliceblue;">EmailAddress</label>
+                    <input type="email" id="EmailAddress" placeholder="Enter email-id" name="EmailAddress"/><br/><br/>
+                </div>
+                <div class="b">
+                    <label for="bday" style="color: aliceblue;">Birthday</label>
+                    <input type="date" name="birthday" id="bday"/><br/><br>
+                </div>
+                <div class="b">
+                    <label for="last name" style="color: aliceblue;">password</label>
+                    <input type="password" id="password" placeholder="create password" name = "password"/><br/><br/>
+                </div>
+                <div class="b">
+                    <label for="last name" style="color: aliceblue;"> confirm password</label>
+                    <input type="password" id="confirm" placeholder="confirm password" name = "password"/><br/><br/>
+                </div>
+                <div class="b">
+                    <input type="submit" value="Click to submit" class="submit">
+                    <input type="refill" value="Click to refill" class="refill">
+                </div>
+            </form>
+        <div class="location">
+            <iframe src="https://www.google.com/maps/d/embed?mid=15ko9Q7JpVpGvbFQpxp70ln1WuEc&ehbc=2E312F" width="540" height="280"></iframe>
+        </div>
+    </div>
+</body>
+</html>
