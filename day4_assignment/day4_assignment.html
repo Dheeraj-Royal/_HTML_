@@ -1,104 +1,110 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Day 4 Assignment</title>
-        <link type="text/css" rel="stylesheet" href="style/style2.css"/>
-    </head>
-    <body style="background-color: rgb(211, 205, 205);">
-        <h1 style ="color: blueviolet;">Dheeraj</h1>
-        <h3>Hobbies</h3>
-        <ul class="unorderedList">
-            <li>playing football</li>
-            <li>Listening music</li>
-            <li>Watching movies</li>
-            <li>jogging</li>
-            <li>reading story books</li>
-        </ul>
-        <br/>
-        <h3>Quotation</h3>
-        <blockquote class="quot">
-            Action speaks more than words !!
-            <p>-XYZ</p>
-        </blockquote>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community_Login_page</title>
+    <link rel="stylesheet" href="day_4_assignment/style.css">
+</head>
+<body style="background-color: rgb(175, 161, 142);">
+    <style>
+        body{
+            border:5px double black;
+        }
+        .caption{
+            color: rgb(0, 17, 3);
+            padding: 1cm;
+            font-size: large;
+            max-width: 20px;
+        }
+        .position0{
+            position: relative;left: 450px;top: -395px;
+        }
+        .position1{
+            position: relative;left: 450px; top: -360px;
+        }
+        .position2{
+            position: relative;left: 450px; top: -330px;
+        }   
+        .position3{
+            position: relative;left: 780px;top: -640px;
+        }
+        .position4{
+            position: relative;left: 780px; top: -580px;
+        }
+        .send{
+            position: relative;left: 650px; top: -535px;
+            accent-color: rgb(55, 243, 118);
+        }
+    </style>
+    <form class="caption" action="https://www.google.co.in/" method="get">
+        <caption >
+            <pre style="color: rgb(148, 8, 55); font-size: xx-large;">             
+                                Registration_Form_For_Community_Group
+            </pre>
+        </caption><br><br>
+        <label for="first name">first_name</label>
+        <input type = "text" id="first name" placeholder="Enter first name" name = "firstname" maxlength="10"/><br/><br/>
+        <!-- <input type = "text" id="first name" placeholder = "firstname" maxlength="10"/><br/><br/> -->            
+        <label for="last name">last_name</label>
+        <input type = "text" id="last name" placeholder="Enter last name" name = "lastname"/><br/><br/>
+        <label for="EmailAddress">EmailAddress</label>
+        <input type="email" id="EmailAddress" placeholder="Enter email-id" name="EmailAddress"/><br/><br/>
+        <label for="last name">password</label>
+        <input type="password" id="password" placeholder="create password" name = "password"/><br/><br/>
+        <label for="last name"> confirm password</label>
+        <input type="password" id="confirm" placeholder="confirm password" name = "password"/><br/><br/>
+        <label for="bday">Birthday</label>
+        <input type="date" name="birthday" id="bday"/><br/><br>
+        <div class="position0">
+            <label for="community" >Select_community</label>
+            <select name ="Education">
+                <option value="select" id="community">select</option>
+                <option value="Python" id="community">Python</option>
+                <option value="javaScript" id="community">javaScript</option>
+                <option value="Html&css" id="community">Html&css</option>
+                <option value="MachineLearning" id="community">MachineLearning</option>
+                <option value="AI" id="community" >AI</option>
+            </select><br/>
+
+         </div>
+        <div class="position1">
+            <label for="qualification" >Education_Qualification</label>
+            <select name ="Education">
+                <option value="select" id="music">select</option>
+                <option value="SSC" id="qualification">SSC</option>
+                <option value="Intermediate" id="qualification">Intermediate</option>
+                <option value="Undergraduate" id="qualification">Undergraduate</option>
+                <option value="Postgraduate" id="qualification">Postgraduate</option>
+            </select><br/>
+
+         </div>
+         <div class="position2">
+            <h4>Gender</h1>
+                Male<input type="radio" name="gender" value="male"/>
+                Female<input type="radio" name="gender" value="Female"/>
+                prefer_not_to_say<input type="radio" name="gender" value="prefer_not_to_say"/>
+                others<input type="radio" name="gender" value="others"/>
+         </div>
+         <div class="position3">
+            <label>Number_Of_Communities_Joined</label>
+            <input type="number" name="communityNUmber" placeholder="Enter no.of NumberOfCommunitiesJoined">
+         </div>
+         <div class="position4">
+            <label>TermsAndConditions</label>
+            <pre>
+            By providing your details you will not be secured
+            and no data will be transferred to external organizations.
+            Please accept the terms and conditions to proceed 
+            </pre>
+            Agree<input type="checkbox" name="Tc" value="Agree">
+            DisAgree<input type="checkbox" name="Tc" value="DisAgree">
+         </div>
+         <div class="send">
+            <input type="submit" value="SUBMIT" formaction="https://www.google.co.in/"/>
+         </div>
         
-        <br/><br/>
-        <h3>Description</h3>
-        <dl class="description">
-            <dt>WWW </dt>
-            <dd>- world wide web</dd>
-            <dt>HTML </dt>
-            <dd>- hyper text markup language</dd>
-            <dt>CSS </dt>
-            <dd>- cascading style sheets</dd>
-        </dl>
-        <table border="8" class="table">
-            <caption>Menu of the hotel</caption>
-            <tr class="head">
-                <th width="250">Dish name</th>
-                <th width="100">Dish Type</th>
-                <th width="150">Description</th>
-                <th width="100">Price</th>
-            </tr>
-            <tr>
-                <th>egg rice</th>
-                <th>Non-veg</th>
-                <th>spicy with sause</th>
-                <th>Rs-70</th>
-            </tr>
-            <tr>
-                <th>chicken rice</th>
-                <th>Non-veg</th>
-                <th>spicy with sause</th>
-                <th>RS-100</th>
-            </tr>
-            <tr>
-                <th>gobi rice</th>
-                <th>veg</th>
-                <th>crispy</th>
-                <th>RS-60</th>
-            </tr>
-            <tr>
-                <th>paneer rice</th>
-                <th>veg</th>
-                <th>tasty with gravy</th>
-                <th>RS-80</th>
-            </tr>
-            <tr>
-                <th>mushroom rice</th>
-                <th>veg</th>
-                <th>tasty with gravy</th>
-                <th>RS-90</th>
-            </tr>
-            <tr>
-                <th>chicken biriyani</th>
-                <th>Non-veg</th>
-                <th>one leg,egg</th>
-                <th>Rs-200</th>
-            </tr>
-            <tr>
-                <th>chicken 65</th>
-                <th>Non-veg</th>
-                <th>spicy</th>
-                <th>Rs-150</th>
-            </tr>
-            <tr>
-                <th>chilli chicken</th>
-                <th>Non-veg</th>
-                <th>spicy</th>
-                <th>Rs-150</th>
-            </tr>
-            <tr>
-                <th>veg biriyani</th>
-                <th>veg</th>
-                <th>spicy</th>
-                <th>Rs-150</th>
-            </tr>
-            <tr>
-                <th>mushroom fry</th>
-                <th>veg</th>
-                <th>spicy,salty</th>
-                <th>Rs-100</th>
-            </tr>
-        </table>
-    </body>
+    </form>
+</body>
 </html>
