@@ -1,0 +1,28 @@
+body{
+    border:5px double black;
+}
+.caption{
+    color: rgb(0, 17, 3);
+    padding: 1cm;
+    font-size: large;
+    max-width: 20px;
+}
+.position0{
+    position: relative;left: 450px;top: -395px;
+}
+.position1{
+    position: relative;left: 450px; top: -360px;
+}
+.position2{
+    position: relative;left: 450px; top: -330px;
+}
+.position3{
+    position: relative;left: 780px;top: -640px;
+}
+.position4{
+    position: relative;left: 780px; top: -580px;
+}
+.send{
+    position: relative;left: 650px; top: -535px;
+    accent-color: rgb(55, 243, 118);
+}
